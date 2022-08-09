@@ -103,7 +103,7 @@ function create_front_product()
 
     $post = array(
         'post_status' => "publish",
-        'post_title' => $_POST['product_title'],
+        'post_title' => esc_html($_POST['product_title']),
         'post_type' => "product",
     );
 
